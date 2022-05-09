@@ -8,7 +8,7 @@ import { ConnectButton, Select, DatePicker, Input, Icon, Button } from "web3uiki
 const Home = () => {
   const [checkIn, setCheckIn] = useState(new Date());
   const [checkOut, setCheckOut] = useState(new Date());
-  const [destination, setDestination] = useState("New York");
+  const [destination, setDestination] = useState("Dubai");
   const [guests, setGuests] = useState(2);
 
   return (
@@ -38,20 +38,20 @@ const Home = () => {
               onChange={(data) => setDestination(data.label)}
               options={[
                 {
-                  id: "ny",
-                  label: "New York"
+                  id: "db",
+                  label: "Dubai"
                 },
                 {
                   id: "lon",
                   label: "London"
                 },
                 {
-                  id: "db",
-                  label: "Dubai"
-                },
-                {
                   id: "la",
                   label: "Los Angeles"
+                },
+                {
+                  id: "ny",
+                  label: "New York"
                 },
               ]}
             />

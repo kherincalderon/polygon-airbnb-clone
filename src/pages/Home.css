@@ -96,7 +96,8 @@
 }
 
 .randomLocation {
-  background-color: #ff385c;
+  background-color: rgba(35, 78, 95, 0.75);
+  backdrop-filter: blur(4px);
   margin-top: 25vh;
   color: white;
   width: 300px;
